@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is Moodle Bomb Safe Window, Where you can find Answers!"
+    />
+    <meta name="keywords" content="moodle moodle-bomb" />
+    <title>Moodle Bomb Safe Window</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="assets/css/safe-window.css" />
+  </head>
+  <body>
+    <form id="login-form" class="login-form">
+      <h2 class="form__title">Moodle Bomb</h2>
+      <input
+        type="text"
+        name="uid"
+        id="uid"
+        class="uid"
+        required
+        placeholder="uid"
+      />
+      <button id="login" class="login">login</button>
+    </form>
+
+    <div id="loadingContainer" class="loading-container">
+      <img src="assets/images/search.gif" alt="loading..." />
+      <footer class="footer">
+        <a href="">new to here, check out the tutorial</a>
+      </footer>
+    </div>
+
+    <div class="title">
+      <span id="countdown" class="countdown"></span>
+      <div class="btn-container">
+        <button id="getHTML" class="btn btn--primary">Get HTML</button>
+        <button id="getResult" class="btn btn--primary">Get Result</button>
+      </div>
+    </div>
+    <div id="root"></div>
+
+
+    <script src="assets/js/config/extension-config.js"></script>
+    <script src="assets/js/config/firebase-config.js"></script>
+    <script src="assets/js/util/md5.min.js"></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
